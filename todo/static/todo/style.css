@@ -1,0 +1,128 @@
+/* Global Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);  /* Soft pink gradient */
+    color: #333;
+    background: url("{% static 'todo/paws.png' %}") no-repeat center center fixed;
+    background-size: cover; /* ✅ Makes the image fit the screen */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 450px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    border: 3px solid #ff3385; /* Cute pink border */
+}
+
+/* Header */
+h1 {
+    font-size: 28px;
+    color: #ff3385;
+    font-weight: bold;
+}
+
+/* Input and Button */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #ff3385;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    background: #ff3385; /* Cute pink */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff5c8a; /* Slightly darker pink */
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    background: #ffebf0; /* Soft pink */
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid #ff9aa2;
+}
+
+/* Completed Task */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    background: #d3d3d3; /* Light gray */
+}
+
+/* Action Buttons */
+.task a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 8px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.task a:first-child {
+    background: #77dd77; /* Green for complete */
+    color: white;
+}
+
+.task a:first-child:hover {
+    background: #5eb95e;
+}
+
+.task a:last-child {
+    background: #ff6961; /* Red for delete */
+    color: white;
+}
+
+.task a:last-child:hover {
+    background: #e74c3c;
+}
+
+/* Cute Footer */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+small {
+    font-size: 12px;
+    color: #666;
+}
+
